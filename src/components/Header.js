@@ -5,11 +5,10 @@ import Constants from 'expo-constants';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { DrawerActions } from "@react-navigation/native";
 const Header = (props) => {
-    console.log(props)
     return (
         <View style={styles.header}>
             <View style={styles.headerContainer}>
-            {props.canGoBack() && 
+            {props.canGoBack() && props.title !== "Accueil" &&
                 <TouchableOpacity onPress={()=>props.goBack()}>
                 <Icon name="arrow-left" color={cssConstants.WHITE} size={32} />
             </TouchableOpacity>

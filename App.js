@@ -10,7 +10,7 @@ export default function App() {
   return (
     <PaperProvider>
       <NavigationContainer>
-        <DrawerNavigation />
+        <MainStack />
       </NavigationContainer>
     </PaperProvider>
   );
